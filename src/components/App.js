@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Demographics from './Demographics';
 import Email from './Email';
 import Name from './Name';
@@ -8,17 +9,32 @@ import ShowMeAll from './ShowMeAll';
 
 class App extends Component {
   render() {
+    // const something = this.props.data.map((data) => (
+    //   <Picture data={data} key={data.contactInfo.fullName} />
+    // ));
     return (
       <div className="App">
+        {
+          this.props.isLoading ?
+          <div>Loading</div> :
+          <Picture />
+        }
         <Name/>
         <Email/>
         <Demographics/>
         <Organizations/>
-        <Picture/>
+        {/* <Picture /> */}
         <ShowMeAll/>
       </div>
     );
   }
 }
 
-export default App;
+function mapStateToProps(state) {
+  return {
+    data: state.data,
+    isLoading: state.isLoading
+  };
+}
+
+export default connect(mapStateToProps)(App);

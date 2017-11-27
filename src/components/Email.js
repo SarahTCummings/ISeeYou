@@ -6,7 +6,7 @@ class Email extends Component {
     return (
       <div className="Email">
         <form className="email_form">
-          <label for="email_form"> What is your email address? </label>
+          <label htmlFor="email_form"> What is your email address? </label>
           <input id="email_form" type="text" placeholder="Email Address"/>
         </form>
       </div>
