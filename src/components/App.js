@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
-import Demographics from './demographics';
-import Email from './email';
-import Name from './name';
-import Organizations from './organizations';
-import Picture from './picture';
-import ShowMeAll from './showMeAll';
+import Demographics from './Demographics';
+import Email from './Email';
+import Name from './Name';
+import Organizations from './Organizations';
+import Picture from './Picture';
+import ShowMeAll from './ShowMeAll';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        <Name/>
+        <Email/>
+        <Demographics/>
+        <Organizations/>
+        <Picture/>
+        <ShowMeAll/>
       </div>
     );
   }

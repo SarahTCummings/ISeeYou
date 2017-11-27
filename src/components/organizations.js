@@ -5,6 +5,7 @@ class Organizations extends Component {
   render() {
     return (
       <div className="Organizations">
+        <p>orgo</p>
       </div>
     );
   }
