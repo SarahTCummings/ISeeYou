@@ -5,7 +5,10 @@ class Email extends Component {
   render() {
     return (
       <div className="Email">
-        <p>email</p>
+        <form className="email_form">
+          <label for="email_form"> What is your email address? </label>
+          <input id="email_form" type="text" placeholder="Email Address"/>
+        </form>
       </div>
     );
   }
