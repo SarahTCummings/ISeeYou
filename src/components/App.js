@@ -5,6 +5,7 @@ import Name from './Name';
 import Organizations from './Organizations';
 import Picture from './Picture';
 import ShowMeAll from './ShowMeAll';
+import David from '../public/david';
 
 class App extends Component {
   render() {

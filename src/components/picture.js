@@ -5,7 +5,7 @@ class Picture extends Component {
   render() {
     return (
       <div className="Picture">
-        <p>pic</p>
+        <img src="./images/pongo.jpg"/>
       </div>
     );
   }
