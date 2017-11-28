@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Demographics from './Demographics';
 import Email from './Email';
-import Name from './Name';
 import Organizations from './Organizations';
 import Picture from './Picture';
 import ShowMeAll from './ShowMeAll';
@@ -24,7 +23,6 @@ class App extends Component {
           ]
         }
 
-        <Name/>
         <Email/>
         <ShowMeAll/>
       </div>
