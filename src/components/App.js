@@ -8,9 +8,7 @@ import ShowMeAll from './ShowMeAll';
 
 class App extends Component {
   render() {
-    // const something = this.props.data.map((data) => (
-    //   <Picture data={data} key={data.contactInfo.fullName} />
-    // ));
+
     return (
       <div className="App">
         {
