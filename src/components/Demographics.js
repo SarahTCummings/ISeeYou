@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 
 class Demographics extends Component {
   render() {
     return (
       <div className="Demographics">
-        <p>demo</p>
+        <p>You are a {this.props.gender} in {this.props.location}</p>
       </div>
     );
   }
 }
 
-export default Demographics;
+function mapStateToProps(state) {
+  return {
+    gender: state.data.demographics.gender,
+    location: state.data.demographics.locationGeneral
+  }
+}
+
+export default connect(mapStateToProps)(Demographics);

@@ -19,10 +19,20 @@ class App extends Component {
           <div>Loading</div> :
           <Picture />
         }
+        {
+          this.props.isLoading ?
+          <div>Loading</div> :
+          <Demographics />
+        }
+        {
+          this.props.isLoading ?
+          <div>Loading</div> :
+          <Organizations />
+        }
         <Name/>
         <Email/>
-        <Demographics/>
-        <Organizations/>
+        {/* <Demographics/> */}
+        {/* <Organizations/> */}
         {/* <Picture /> */}
         <ShowMeAll/>
       </div>
