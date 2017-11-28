@@ -6,7 +6,7 @@ class Picture extends Component {
   render() {
     return (
       <div className="Picture">
-        <img src={this.props.data.photos[0].url} alt="David"/>
+        <img src={this.props.data.photos[1].url} alt="David"/>
       </div>
     );
   }

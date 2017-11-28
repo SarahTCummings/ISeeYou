@@ -17,23 +17,15 @@ class App extends Component {
         {
           this.props.isLoading ?
           <div>Loading</div> :
-          <Picture />
+          [
+          <Picture />,
+          <Demographics />,
+          <Organizations />,
+          ]
         }
-        {
-          this.props.isLoading ?
-          <div>Loading</div> :
-          <Demographics />
-        }
-        {
-          this.props.isLoading ?
-          <div>Loading</div> :
-          <Organizations />
-        }
+
         <Name/>
         <Email/>
-        {/* <Demographics/> */}
-        {/* <Organizations/> */}
-        {/* <Picture /> */}
         <ShowMeAll/>
       </div>
     );
