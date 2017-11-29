@@ -16,7 +16,7 @@ class ShowMeAll extends Component {
               <p key="showMeLocation">{this.props.demographics.locationGeneral || null}</p>] : null}
             </div>
 
-
+{/* Below is for the organiziaitons. If Orgos exists, it loops through them and diplays them all. */}
             {this.props.organizations ? this.props.organizations.map((org) => (
           <div key={org.name}>
               <p>{org.title || null}</p>
@@ -28,6 +28,8 @@ class ShowMeAll extends Component {
         )) : null}
         </div>
 
+
+{/* Below is for the social profiles(sp). If SP exists, it will show all the parts*/}
           {
           this.props.socialProfiles ?
           this.props.socialProfiles.map((profile) => (
@@ -42,6 +44,7 @@ class ShowMeAll extends Component {
           : null
         }
 
+{/* Below is for contact info. If CI exists, then it will show all the parts */}
         {
           this.props.contactInfo ?
           <div className="contactInfo">
@@ -61,6 +64,7 @@ class ShowMeAll extends Component {
           : null
         }
 
+{/* Below is for photos. If photos exists, then it will show all the photos */}
         {
         this.props.photos ?
         this.props.photos.map((photo) => (
@@ -75,10 +79,8 @@ class ShowMeAll extends Component {
     );
   }
 }
-// TODO: KEYS
 
 function mapStateToProps(state) {
-  console.log(state.data.contactInfo);
   return {
     data: state.data,
     socialProfiles: state.data.socialProfiles,
