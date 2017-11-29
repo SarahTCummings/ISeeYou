@@ -1,6 +1,7 @@
 const INITIAL_STATE = {
   data: null,
-  isLoading: true
+  isLoading: true,
+  screen: 1
 };
 
 export default function(state = INITIAL_STATE, action) {
@@ -13,7 +14,12 @@ export default function(state = INITIAL_STATE, action) {
     case "RECEIVE":
       return Object.assign({}, state, {
         data: action.data,
-        isLoading: false
+        isLoading: false,
+        screen: 1
+      });
+    case "NEXT":
+      return Object.assign({}, state, {
+        screen: state.screen + 1
       });
     default:
       return state;

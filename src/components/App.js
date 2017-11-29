@@ -8,21 +8,19 @@ import ShowMeAll from './ShowMeAll';
 
 class App extends Component {
   render() {
+    const Form = this.props.screen === 1 && <Email />;
+    const Pic = this.props.screen === 2 && <Picture />;
+    const Demo = this.props.screen === 3 && <Demographics />;
+    const Orgo = this.props.screen === 4 && <Organizations />;
+    const ShowAll = this.props.screen === 5 && <ShowMeAll />;
 
     return (
       <div className="App">
-        {
-          this.props.isLoading ?
-          <div>Loading</div> :
-          [
-          <Picture />,
-          <Demographics />,
-          <Organizations />,
-          ]
-        }
-
-        <Email/>
-        <ShowMeAll/>
+        {Form}
+        {Pic}
+        {Demo}
+        {Orgo}
+        {ShowAll}
       </div>
     );
   }
@@ -31,7 +29,8 @@ class App extends Component {
 function mapStateToProps(state) {
   return {
     data: state.data,
-    isLoading: state.isLoading
+    isLoading: state.isLoading,
+    screen: state.screen
   };
 }
 

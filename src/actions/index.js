@@ -23,5 +23,11 @@ function requestData() {
   };
 }
 
+export function next() {
+  return {
+    type: "NEXT"
+  }
+}
+
 
 // curl -H "X-FullContact-APIKey:$your_key" 'https://api.fullcontact.com/v2/person.json?email=barton@fullcontact.com'
