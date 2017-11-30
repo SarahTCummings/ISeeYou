@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { next } from '../actions'
+import { next, fetchData } from '../actions'
 
 
 class Email extends Component {
@@ -17,7 +17,7 @@ class Email extends Component {
         <form className="email_form">
           <label htmlFor="email_form"> <h1> Enter your email address. </h1> </label>
           <input id="email_form" type="text" placeholder="you@gmail.com" value={this.state.email} onChange={this.handleEmailChange.bind(this)}/>
-          <button onClick={this.props.next} type="submit">Submit</button>
+          <button type="submit">Submit</button>
         </form>
       </div>
     );
@@ -32,17 +32,15 @@ class Email extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    this.props.fetchData({
-      email: this.state.email
-    });
+    this.props.fetchData(this.state.email);
     this.setState({
-      email:""
+      email: ""
     })
   }
 }
 
 const mapActionsToProps = {
-  next
+  next, fetchData
 }
 
 export default connect(null, mapActionsToProps)(Email);

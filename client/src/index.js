@@ -18,7 +18,7 @@ const store = createStore(
 );
 
 //TODO Remove (store.dispatch(fetchData)) once we have the real API loaded on the page.
-store.dispatch(fetchData());
+// store.dispatch(fetchData());
 
 ReactDOM.render(
     <Provider store={store}>
