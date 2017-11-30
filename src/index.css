@@ -234,10 +234,6 @@ input {
   margin-right: auto;
   padding: 25px;
   border-radius: 12px;
-  overflow: hidden;
-  animation-duration: 4s;
-  animation-name: slidein;
-  animation-direction: reverse; 
   background-color: rgba(88, 96, 109, .8);
   z-index: 1;
 }
