@@ -178,7 +178,7 @@ input {
 @media only screen and (min-width: 1200px) {
   /*Styles for the picture page*/
   h1 {
-    font-size: 45px;
+    font-size: 35px;
   }
 
   button {
@@ -221,5 +221,40 @@ input {
     z-index: -1;
     transition: width 10s;
 
+  }
+}
+
+  /*Styles for the Welcome page*/
+.WelcomeBox {
+  width: 500px;
+  height: 300px;
+  margin-top: 200px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  border-radius: 12px;
+  background-color: rgba(88, 96, 109, .8);
+  z-index: 1;
+}
+
+.WelcomeFigure {
+  z-index: 2;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
