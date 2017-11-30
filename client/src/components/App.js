@@ -9,7 +9,7 @@ import WelcomePage from './WelcomePage';
 
 class App extends Component {
   render() {
-// this section below is how we toggle between components by clicking the button on each component. The code below updates the state to the corresponding component's screen number when the button is clicked. The syntax below as written is an if statement. 
+// this section below is how we toggle between components by clicking the button on each component. The code below updates the state to the corresponding component's screen number when the button is clicked. The syntax below as written is an if statement.
     const Welcome = this.props.screen === 1 && <WelcomePage />;
     const Form = this.props.screen === 2 && <Email />;
     const Pic = this.props.screen === 3 && <Picture />;
@@ -19,6 +19,7 @@ class App extends Component {
 
     return (
       <div className="App">
+        <div className="hiddingForms"></div>
         {Welcome}
         {Form}
         {Pic}

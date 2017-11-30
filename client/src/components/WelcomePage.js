@@ -9,9 +9,9 @@ class WelcomePage extends Component {
   render () {
     return (
         <div className="Welcome">
-          {/* <div className="WelcomeFigure">
+           <div className="WelcomeFigure">
             <img className="WelcomeFigure2" src={ShadowFigure} alt="shadowy figure"></img>
-          </div> */}
+          </div>
           <div className="WelcomeBox">
             <h1> Welcome, human. <br></br> Would you like to know what I see? </h1>
             <button onClick={this.props.next} type="submit">Yes, continue</button>
