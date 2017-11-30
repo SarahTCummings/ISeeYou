@@ -3,7 +3,8 @@ import $ from 'jquery-ajax';
 export function fetchData(email) {
   return function(dispatch) {
     dispatch(requestData());
-    $.get("/david.json").done(function(data) {
+      const url =  "https://api.fullcontact.com/v2/person.json?email=cody@grandcircus.co"; 
+      $.ajax({url: url, headers: {"X-FullContact-APIKey": "aa1febea3072edd9"}}).done(function(data) {
       dispatch(receiveData(data));
     });
   };
@@ -30,4 +31,4 @@ export function next() {
 }
 
 
-// curl -H "X-FullContact-APIKey:$your_key" 'https://api.fullcontact.com/v2/person.json?email=barton@fullcontact.com'
+// curl -H 'X-FullContact-APIKey:$your_key' 'https://api.fullcontact.com/v2/person.json?email=barton@fullcontact.com'
