@@ -18,7 +18,7 @@ class ShowMeAll extends Component {
 
 {/* Below is for the organiziaitons. If Orgos exists, it loops through them and diplays them all. */}
             {this.props.organizations ? this.props.organizations.map((org) => (
-          <div key={org.name}>
+          <div className="ShowMeOrganizations" key={org.name}>
               <p>{org.title || null}</p>
               <p>{org.name || null}</p>
               <p>{org.startDate || null}</p>
@@ -34,11 +34,11 @@ class ShowMeAll extends Component {
           this.props.socialProfiles ?
           this.props.socialProfiles.map((profile) => (
             profile.type !== 'klout' ?
-            <div key={profile.typeId}>
-              <p>{profile.typeName || null}</p>
-              <p>{profile.bio || null}</p>
-              <p>{profile.followers ? "Followers: " + profile.followers : null}</p>
-              <p>{profile.following || null}</p>
+            <div className="socialProfile" key={profile.typeId}>
+              <p className="socialType">{profile.typeName || null}</p>
+              <p className="socialBio">{profile.bio || null}</p>
+              <p className="socialFollowers">{profile.followers ? "Followers: " + profile.followers : null}</p>
+              <p className="socialFollowing">{profile.following || null}</p>
             </div> : null
           ))
           : null
