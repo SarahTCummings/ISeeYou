@@ -9,9 +9,11 @@ class Picture extends Component {
       <div className="Picture">
         <img className="Giant_eye" src={Pongo} alt="giant eye"/>
         <img className="Giant_eye_cape" src={Pongo} alt="giant eye with cape"/>
-        <h1>&#128065; Hello {this.props.name} &#128065;</h1>
-        {/* <img className="Picture_initial" src={this.props.data.photos[1].url} alt="David"/> */}
-        <button onClick={this.props.next} type="submit">Show Me More</button>
+        <div className="Picture_initial_container">
+          <h1 className="Picture_initial_header">&#128065; Hello {this.props.name} &#128065;</h1>
+          <img className="Picture_initial" src={this.props.data.photos[1].url} alt="David"/>
+          <button className="Picture_initial_button" onClick={this.props.next} type="submit">Show Me More</button>
+        </div>
       </div>
     );
   }
