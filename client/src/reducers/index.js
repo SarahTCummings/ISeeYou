@@ -15,8 +15,7 @@ export default function(state = INITIAL_STATE, action) {
       return Object.assign({}, state, {
         data: action.data,
         isLoading: false,
-// TODO Change the hard coded screen from 6 to 3 or state.screen + 1 
-        screen: 6
+        screen: 1
       });
     case "NEXT":
       return Object.assign({}, state, {
