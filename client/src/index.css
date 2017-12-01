@@ -10,47 +10,12 @@ body {
   color: white;
   /*background-image: url('./images/gradientback.jpg');*/
   height: 100%;
-  background: #4A48F3;
-  background: linear-gradient(#4A48f3, #30305c);
-background-repeat: no-repeat;
-}
-.hiddingForms{
-  position: absolute;
-  top: 0;
-  left: 0;
-  /*width: 100%;
-  height: 100%;*/
-background: linear-gradient(#4A48f3, #30305c);
-background-repeat: no-repeat;
-z-index: 10;
-animation-name: revealFromRightToLeft;
-animation-duration: 5s;
-}
-
-@keyframes revealFromRightToLeft{
-  0% {
-    height: 100%;
-    width: 100%;
-    }
-
-  100% {
-    height: 100%;
-    width: 0%;
-  }
-}
-
-h1 {
-  font-family: 'Ubuntu', sans-serif;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: radial-gradient(#525291, #0F0F33);
+  /*background: linear-gradient(#18174F, #9797B8);*/
 }
 
 button {
-  margin: 17px;
+  margin: 0px;
   width: 140px;
   height: 45px;
   font-family: 'Roboto', sans-serif;
@@ -67,6 +32,70 @@ button {
   cursor: pointer;
   outline: none;
   }
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
+}
+
+.WelcomeBox {
+  z-index: 3;
+  width: 300px;
+  height: 215px;
+  position: absolute;
+  background-color: rgba(88, 96, 109, .8);
+  text-align: center;
+  padding: 10px;
+  margin-top: 200px;
+}
+
+.WelcomeFigure {
+  display:none;
+}
+
+.WelcomeMobile {
+  z-index: 1;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.WelcomeMobileEye {
+  margin-top: 12px;
+  margin-left: 77px;
+  position: absolute;
+  animation-name: fadeIn;
+  animation-duration: 8s;
+  z-index: 2;
+}
+
+.WelcomMoblileClosedEye {
+  margin-top: 35px;
+  margin-left: 77px;
+  position: absolute;
+  animation-name: fadeOut;
+  animation-duration: 8s;
+  z-index: 3;
+
+}
+
+@keyframes fadeOut {
+   0% {opacity: 1;}
+   100% {opacity: 0;}
+}
+
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
 
 button:hover {
   background-color: #2EE59D ;
@@ -94,10 +123,12 @@ input {
 }
 
 .Demographics {
+  background: radial-gradient(#525291, #0F0F33);
 
 }
 
  .Organizations {
+   background: radial-gradient(#525291, #0F0F33);
 
  }
 
@@ -109,6 +140,7 @@ input {
  align-items: center;
  justify-content: center;
  margin: 0 auto;
+ background: radial-gradient(#525291, #0F0F33);
 }
 
 .Picture_initial_container {
@@ -151,8 +183,8 @@ input {
 }
 
 .Giant_eye {
-  width: 400px;
-  height: 700px;
+  /*width: 400px;
+  height: 700px;*/
   animation-name: rollDown;
   animation-duration: 5s;
   z-index: 1;
@@ -189,6 +221,50 @@ input {
  }
 
 @media only screen and (min-width: 768px) {
+
+  button {
+    margin: 17px;
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+
+  .hiddingForms{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 100%;
+    height: 100%;*/
+  background: radial-gradient(#525291, #0F0F33);
+  background-repeat: no-repeat;
+  z-index: 10;
+  animation-name: revealFromRightToLeft;
+  animation-duration: 5s;
+  }
+
+  @keyframes revealFromRightToLeft{
+    0% {
+      height: 100%;
+      width: 100%;
+      }
+
+    100% {
+      height: 100%;
+      width: 0%;
+    }
+  }
 /*Styles for the picture page*/
   h1 {
     font-size: 45px;
@@ -241,7 +317,7 @@ input {
   }
 
   .Giant_eye {
-  
+
   }
 
   .Giant_eye_cape {
@@ -251,7 +327,7 @@ input {
     transition: width 10s;
 
   }
-}
+
 
   /*Styles for the Welcome page*/
 .WelcomeBox {
@@ -266,6 +342,14 @@ input {
   overflow: hidden;
   background-color: rgba(88, 96, 109, .8);
   z-index: 1;
+}
+
+.WelcomeFigure2 {
+  -webkit-filter: drop-shadow(0 2px 20px rgba(0,0,0,.5));
+  -moz-filter: drop-shadow(0 2px 20px rgba(0,0,0,.5));
+  -ms-filter: drop-shadow(0 2px 20px rgba(0,0,0,.5));
+  -o-filter: drop-shadow(0 2px 20px rgba(0,0,0,.5));
+  filter: drop-shadow(0 2px 20px rgba(0,0,0,.5));
 }
 
 .WelcomeFigure {
@@ -287,4 +371,6 @@ input {
     margin-left: 0%;
     width: 100%;
   }
+}
+
 }
