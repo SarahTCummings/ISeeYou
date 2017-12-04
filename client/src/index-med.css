@@ -1,0 +1,139 @@
+/* Medium Screen Size (and larger) */
+@media only screen and (min-width: 768px) {
+
+  h1 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+  }
+
+  .WelcomeBox {
+    z-index: 3;
+    width: 600px;
+    height: 400px;
+
+    background-color: rgba(88, 96, 109, .8);
+    text-align: center;
+    padding: 10px;
+    margin-top: 200px;
+    margin-left: 35px;
+  }
+
+  .WelcomeMobile {
+    margin-left: 175px;
+  }
+
+
+  button {
+    margin: 0px;
+    width: 140px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+
+  .hiddingForms{
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*width: 100%;
+    height: 100%;*/
+  background: radial-gradient(#525291, #0F0F33);
+  background-repeat: no-repeat;
+  z-index: 10;
+  animation-name: revealFromRightToLeft;
+  animation-duration: 5s;
+  }
+
+  .WelcomeMobileEye {
+    margin-top: 12px;
+    margin-left: 252px;
+    position: absolute;
+    visibility: hidden;
+    animation: eyeAppear 2s infinite 2s;
+    z-index: 2;
+  }
+  .WelcomeMobilePupil {
+    margin-top: 26px;
+    margin-left: 252px;
+    position: absolute;
+    z-index: 2;
+    animation: pupilLooking 5s infinite 3s;
+  }
+
+  .WelcomMoblileClosedEye {
+    margin-top: 35px;
+    margin-left: 252px;
+    position: absolute;
+    animation-name: hideMe;
+    animation-duration: 2s;
+    visibility: hidden;
+    z-index: 3;
+
+  }
+
+  @keyframes hideMe {
+     0%{
+       visibility: visible;
+     }
+     100% {
+       visibility: hidden;
+     }
+  }
+
+  @keyframes eyeAppear {
+    0%{
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+
+  @keyframes pupilLooking {
+    0% {
+      margin-top: 26px;
+      margin-left: 252px;
+    }
+    25% {
+      margin-top: 26px;
+      margin-left: 237px;
+    }
+
+    50% {
+      margin-top: 26px;
+      margin-left: 252px;
+    }
+     75% {
+        margin-top: 26px;
+        margin-left: 264px;
+    }
+    100% {
+      margin-top: 26px;
+      margin-left: 252px;
+    }
+  }
+
+/*Styles for the picture page*/
+  h1 {
+    font-size: 45px;
+  }
+
+  button {
+    margin: 30px;
+    width: 200px;
+    height: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    }
+}
