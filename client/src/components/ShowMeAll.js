@@ -3,6 +3,14 @@ import { connect } from 'react-redux';
 
 class ShowMeAll extends Component {
   render() {
+    function getPhotoIndex(photos, profile) {
+      for(var i = 0; i < photos.length; i ++) {
+        if(photos[i].typeId === profile.typeId) {
+          return photos[i].url;
+          }
+        }
+    }
+
     return (
       <div className="ShowMeAll">
         <div className="Summary">
@@ -39,11 +47,12 @@ class ShowMeAll extends Component {
       <div className="ShowMeSocialProfiles">
         <h1>Social Profiles</h1>
         <p>Below is what we found for your social profiles.</p>
-          {
+{
           this.props.socialProfiles ?
           this.props.socialProfiles.map((profile) => (
             profile.type !== 'klout' ?
             <div className="socialProfile" key={profile.typeId}>
+              <img className="photos" src={getPhotoIndex(this.props.photos, profile)}/>
               <a href={profile.url || null}>{profile.typeName || null}</a>
               {profile.username ? <p className="userName">Username: {profile.username}</p> : null}
               {profile.bio ? <p className="socialBio">{profile.bio}</p> : null}
