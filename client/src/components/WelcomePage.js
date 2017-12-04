@@ -18,8 +18,10 @@ class WelcomePage extends Component {
           </div>
             <img className="WelcomeMobile" src={Cloaknoeyesmll} alt="shadowy figure"></img>
             <img className="WelcomMoblileClosedEye" src={Eyeball} alt="closed eye"></img>
+
             <img className="WelcomeMobileEye " src={Eye2} alt="graphic eye"></img>
             <img className="WelcomeMobilePupil " src={Pupil} alt="pupil"></img>
+
           <div className="WelcomeBox">
             <h1> Welcome, human. <br></br> Would you like to know what I see? </h1>
             <button onClick={this.props.next} type="submit">Yes, continue</button>
