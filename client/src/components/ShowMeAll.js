@@ -7,14 +7,14 @@ class ShowMeAll extends Component {
       for(var i = 0; i < photos.length; i ++) {
         if(photos[i].typeId === profile.typeId) {
           return photos[i].url;
-          }
         }
+      }
     }
 
     return (
       <div className="ShowMeAll">
         <div className="Summary">
-          {/* Line11: checks if the array photos exists, if it does get the url of the first photo, otherwise do nothing. Same is for the alt but with name instead of url. */}
+          {/* The line below checks if the array photos exists, if it does get the url of the first photo, otherwise do nothing. Same is for the alt but with name instead of url. */}
           <img className="ShowMePhoto" src={this.props.photos ? this.props.photos[0].url : null} alt={this.props.photos ? this.props.photos[0].typeName : null}/>
           <div className="ShowMeName">
             {this.props.contactInfo ? <p>Name: {this.props.contactInfo.fullName}</p>: null}
@@ -62,22 +62,16 @@ class ShowMeAll extends Component {
           ))
           : null
         }
-        {/* {for(i = 0; i < this.props.photos.length; i++) {
-            this.props.photos.typeId === this.props.socialProfiles.typeId ?
-              <div key={this.props.photos.typeId}>
-                <img className="photos" src={this.props.photos[i].url} alt={this.props.photos[i].typeName}/>
-              </div> : null}
-        } */}
       </div>
 
 {/* Below is for contact info. If CI exists, then it will show all the parts */}
         {
           this.props.contactInfo ?
           <div className="contactInfo">
-            <h1>Websites</h1>
-            <h3>Below are the websites that you're affilated with.</h3>
+            <h1>Websites & Chat handles</h1>
+            <h3>Below are the websites & chat handles you are assoicated with.</h3>
           {this.props.contactInfo.websites ? this.props.contactInfo.websites.map((website) => (
-            <p key={website.url}>{website.url}</p>
+            <a href={website.url} key={website.url}>{website.url}</a>
           )) : null}
           {this.props.contactInfo.chats ? this.props.contactInfo.chats.map((chat) => (
             [<p key={chat.handle}>{chat.hanndle}</p>,
@@ -86,21 +80,6 @@ class ShowMeAll extends Component {
           </div>
           : null
         }
-
-{/* Below is for photos. If photos exists, then it will show all the photos */}
-        {/* <div className="ShowMePhotos">
-          <h2>Photos</h2>
-          <p>Below are your photos on the internet.</p>
-          {
-          this.props.photos ?
-          this.props.photos.map((photo) => (
-          <div key={photo.typeId}>
-            <img className="photos" src={photo.url} alt={photo.typeName}/>
-          </div>
-          ))
-          : null
-          }
-        </div> */}
       </div>
     );
   }

@@ -180,7 +180,7 @@ input {
 /*Styles for the Orgo page*/
  .Organizations {
    text-align: center;
-   background:rgba(88, 96, 109, .8);;
+   background:rgba(88, 96, 109, .8);
    padding-top: 10px;
    padding-bottom: 20px;
    border-radius: 5px;
@@ -315,9 +315,21 @@ input {
 .socialProfile {
   display: flex;
   flex-direction: column;
-  border-bottom: 5px dashed aqua;
-  margin: 0 auto;
+  justify-content: center;
+  margin-top: 10px;
   margin-bottom: 15px;
+  border: 3px solid;
+  color: black;
+  border-radius: 5px;
+  background:rgba(88, 96, 109, .8);
+  box-shadow: 5px 5px 30px rgba(210, 253, 255, 1);
+  width: 75%;
+  padding: 10px;
+}
+
+.photos {
+  align-self: center;
+  margin-bottom: 10px;
 }
 
 a {
@@ -342,5 +354,5 @@ a:hover {
 }
 
 .photos {
-  width: 90%;
+  width: 10%;
 }
