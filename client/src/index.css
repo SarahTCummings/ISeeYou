@@ -93,7 +93,6 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 
@@ -125,15 +124,35 @@ input {
 /*Syles for the Demographics page*/
 
 .Demographics {
-  background: radial-gradient(#525291, #0F0F33);
+  text-align: center;
+  background:rgba(88, 96, 109, .8);;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 50px rgba(210, 253, 255, 1);
+}
 
+.demoPara {
+  margin-bottom: 10px;
+  font-size: 35px;
 }
 
 
 /*Styles for the Orgo page*/
  .Organizations {
-   background: radial-gradient(#525291, #0F0F33);
+   text-align: center;
+   background:rgba(88, 96, 109, .8);;
+   padding-top: 10px;
+   padding-bottom: 20px;
+   border-radius: 5px;
+   margin: 0 auto;
+   margin-top: 50px;
+   box-shadow: 5px 5px 50px rgba(210, 253, 255, 1);
+ }
 
+ .orgoPara {
+   margin-bottom: 10px;
+   font-size: 30px;
  }
 
 /* Styles for the picture page */
@@ -335,6 +354,8 @@ a:hover {
 /*Styles for the picture page*/
   h1 {
     font-size: 45px;
+    margin: 0;
+    padding: 0;
   }
 
   button {
@@ -346,6 +367,133 @@ a:hover {
     }
 }
 
+/*Syles for the Demographics page*/
+
+.Demographics {
+  text-align: center;
+  background:rgba(88, 96, 109, .8);;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 150px;
+  box-shadow: 5px 5px 50px rgba(210, 253, 255, 1);
+  width: 85%;
+}
+
+.demoPara {
+  margin-bottom: 10px;
+  font-size: 35px;
+}
+
+/*Styles for the Orgo page*/
+ .Organizations {
+   text-align: center;
+   background:rgba(88, 96, 109, .8);;
+   padding-top: 10px;
+   padding-bottom: 20px;
+   border-radius: 5px;
+   margin: 0 auto;
+   margin-top: 150px;
+   box-shadow: 5px 5px 50px rgba(210, 253, 255, 1);
+   width: 85%;
+ }
+
+ .orgoPara {
+   margin-bottom: 10px;
+   font-size: 30px;
+ }
+
+/*Syles for the Show me all page*/
+.ShowMeOrganizations, .ShowMePhotos {
+   display: flex;
+   flex-flow: wrap;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .Summary {
+   border: 3px solid;
+   color: black;
+   border-radius: 5px;
+   background-color: yellow;
+   box-shadow: 5px 5px 5px #5E5E5E;
+   margin: 0 auto;
+   margin-top: 10px;
+   text-align: left;
+   width: 300px;
+   padding: 5%;
+ }
+
+ .ShowMeOrgo {
+  text-align: center;
+ }
+
+ .ShowMeOrganizations {
+   border: 3px solid black;
+   color: black;
+   border-radius: 5px;
+   background-color: yellow;
+   box-shadow: 5px 5px 5px #5E5E5E;
+   margin: 0 auto;
+   margin-top: 10px;
+   text-align: left;
+   padding: 5%;
+ }
+
+.socialProfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 3px solid;
+  color: black;
+  border-radius: 5px;
+  background-color: purple;
+  box-shadow: 5px 5px 5px #5E5E5E;
+  width: 500px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: aqua;
+  font-size: 20px;
+}
+
+p {
+  padding: 0;
+  margin: 3px;
+}
+
+a:hover {
+  color: yellow;
+  text-decoration: underline;
+  background-color: aqua;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 3px solid;
+  color: black;
+  border-radius: 5px;
+  background-color: purple;
+  box-shadow: 5px 5px 5px #5E5E5E;
+  width: 500px;
+  padding: 10px;
+}
+
+.photos {
+  width: 90%;
+}
+
+h3 {
+  color: white;
+}
 
 @media only screen and (min-width: 1200px) {
   /*Styles for the picture page*/
@@ -354,11 +502,13 @@ a:hover {
   }
 
   button {
+    padding: 10px;
+    width: 240px;
+    height: 60px;
+    font-size: 18px;
     margin: 45px;
-    width: 200px;
-    height: 45px;
     font-family: 'Roboto', sans-serif;
-    font-size: 13px;
+    font-size: 18px;
     }
 
   .Picture_initial {
@@ -438,6 +588,149 @@ a:hover {
     margin-left: 0%;
     width: 100%;
   }
+}
+
+.Demographics {
+  text-align: center;
+  background:rgba(88, 96, 109, .8);;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 150px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 50px rgba(210, 253, 255, 1);
+  width: 80%;
+}
+
+.demoPara {
+  margin-bottom: 10px;
+  font-size: 55px;
+}
+
+/*Styles for the Orgo page*/
+ .Organizations {
+   text-align: center;
+   background:rgba(88, 96, 109, .8);;
+   padding-top: 10px;
+   padding-bottom: 20px;
+   border-radius: 5px;
+   margin: 0 auto;
+   margin-top: 150px;
+   box-shadow: 5px 5px 50px rgba(210, 253, 255, 1);
+   width: 85%;
+ }
+
+ .orgoPara {
+   margin-bottom: 10px;
+   font-size: 45px;
+ }
+
+/*Syles for the Show me all page*/
+.ShowMeOrganizations {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+ }
+
+
+.ShowMePhotos {
+   display: flex;
+   flex-flow: wrap;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .Summary {
+   border: 3px solid;
+   color: black;
+   border-radius: 5px;
+   background-color: yellow;
+   box-shadow: 5px 5px 5px #5E5E5E;
+   margin: 0 auto;
+   margin-top: 10px;
+   text-align: left;
+   width: 300px;
+   padding: 5%;
+ }
+
+ .ShowMeOrgo {
+  text-align: center;
+  border: 3px solid black;
+  color: black;
+  border-radius: 5px;
+  background-color: yellow;
+  box-shadow: 5px 5px 5px #5E5E5E;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: left;
+  padding: 5%;
+ }
+
+ .ShowMeOrganizations {
+   display: flex;
+   flex-direction: row;
+ }
+
+ .orgoButton {
+   padding: 10px;
+   width: 240px;
+   height: 60px;
+   font-size: 18px
+ }
+
+.socialProfile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 3px solid;
+  color: black;
+  border-radius: 5px;
+  background-color: purple;
+  box-shadow: 5px 5px 5px #5E5E5E;
+  width: 500px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: aqua;
+  font-size: 20px;
+}
+
+p {
+  padding: 0;
+  margin: 3px;
+}
+
+a:hover {
+  color: yellow;
+  text-decoration: underline;
+  background-color: aqua;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 3px solid;
+  color: black;
+  border-radius: 5px;
+  background-color: purple;
+  box-shadow: 5px 5px 5px #5E5E5E;
+  width: 500px;
+  padding: 10px;
+}
+
+.photos {
+  width: 90%;
+}
+
+h3 {
+  color: white;
 }
 
 }

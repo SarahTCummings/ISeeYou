@@ -20,14 +20,16 @@ class ShowMeAll extends Component {
         </div>
 
 {/* Below is for the organiziaitons. If Orgos exists, it loops through them and diplays them all. */}
-        <div className="ShowMeOrgo">
-          <h2>Organizations:</h2>
+        <div>
+          <h1>Organizations</h1>
             {this.props.organizations ? this.props.organizations.map((org) => (
-          <div className="ShowMeOrganizations" key={org.name}>
+          <div className="ShowMeOrganizations">
+            <div className="ShowMeOrgo" key={org.name}>
               <p>{org.name || null}: {org.title || null}</p>
               <p>Start Date: {org.startDate || "Unknown"}</p>
               <p>End Date: {org.endDate || "Unknown"}</p>
               <p>{org.current || null}</p>
+            </div>
           </div>
         )) : null}
         </div>
@@ -35,9 +37,8 @@ class ShowMeAll extends Component {
 
 {/* Below is for the social profiles(sp). If SP exists, it will show all the parts*/}
       <div className="ShowMeSocialProfiles">
-        <h2>Social Profiles</h2>
+        <h1>Social Profiles</h1>
         <p>Below is what we found for your social profiles.</p>
-        <i class="fa fa-facebook-official" aria-hidden="true"></i>
           {
           this.props.socialProfiles ?
           this.props.socialProfiles.map((profile) => (
@@ -52,14 +53,20 @@ class ShowMeAll extends Component {
           ))
           : null
         }
+        {/* {for(i = 0; i < this.props.photos.length; i++) {
+            this.props.photos.typeId === this.props.socialProfiles.typeId ?
+              <div key={this.props.photos.typeId}>
+                <img className="photos" src={this.props.photos[i].url} alt={this.props.photos[i].typeName}/>
+              </div> : null}
+        } */}
       </div>
 
 {/* Below is for contact info. If CI exists, then it will show all the parts */}
         {
           this.props.contactInfo ?
           <div className="contactInfo">
-            <h2>Websites</h2>
-            <p>Below are the websites that you're affilated with.</p>
+            <h1>Websites</h1>
+            <h3>Below are the websites that you're affilated with.</h3>
           {this.props.contactInfo.websites ? this.props.contactInfo.websites.map((website) => (
             <p key={website.url}>{website.url}</p>
           )) : null}
@@ -72,7 +79,7 @@ class ShowMeAll extends Component {
         }
 
 {/* Below is for photos. If photos exists, then it will show all the photos */}
-        <div className="ShowMePhotos">
+        {/* <div className="ShowMePhotos">
           <h2>Photos</h2>
           <p>Below are your photos on the internet.</p>
           {
@@ -84,7 +91,7 @@ class ShowMeAll extends Component {
           ))
           : null
           }
-        </div>
+        </div> */}
       </div>
     );
   }

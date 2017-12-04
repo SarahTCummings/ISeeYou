@@ -7,7 +7,7 @@ class Demographics extends Component {
   render() {
     return (
       <div className="Demographics">
-        <p>You are a {this.props.gender} in {this.props.location}</p>
+        <h1 className="demoPara">You are a {this.props.gender} in {this.props.location}.</h1>
         <button onClick={this.props.next} type="submit">Show Me More</button>
       </div>
     );

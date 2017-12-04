@@ -14,7 +14,6 @@ class WelcomePage extends Component {
         <div className="Welcome">
            {/* <div className="WelcomeFigure">
             <img className="WelcomeFigure2" src={ShadowFigure} alt="shadowy figure"></img>
-<<<<<<< HEAD
           </div> */}
             <img className="WelcomeMobile" src={Cloaknoeyesmll} alt="shadowy figure"/>
             <img className="WelcomeMobileEye " src={Eye2} alt="graphic eye"/>
