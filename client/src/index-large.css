@@ -9,9 +9,9 @@
     color: white;
     /*background-image: url('./images/gradientback.jpg');*/
     height: 100%;
-    background: #4A48F3;
     background: linear-gradient(#525291, #0F0F33);
-    background-repeat: no-repeat;
+
+
   }
   .hiddingForms{
     position: absolute;
@@ -36,12 +36,8 @@
     }
   }
 
-  h1 {
-    font-size: 35px;
-  }
-
   button {
-    margin: 45px;
+    margin: 25px;
     width: 200px;
     height: 45px;
     font-family: 'Roboto', sans-serif;
@@ -87,7 +83,7 @@
 .WelcomeBox {
   width: 500px;
   height: 300px;
-  margin-top: 264px;
+  margin-top: 244px;
   text-align: center;
   margin-left: 250px;
   padding: 25px;
@@ -108,7 +104,7 @@
 .WelcomeFigure {
   z-index: 0;
   position: absolute;
-  top: 100px;
+  top: 80px;
   left: -75%;
   animation-duration: 15s;
   animation-name: slidein;
@@ -116,7 +112,7 @@
 }
 
 .WelcomeMobile {
-  margin-top: 114px;
+  margin-top: 94px;
   margin-left: 350px;
 }
 
@@ -147,34 +143,34 @@
 
 h1 {
   text-align: center;
-  font-size: 55px;
+  font-size: 35px;
 }
 
 /* TODO finish styling the lower half of the Show me all page*/
 
 
   .WelcomeMobileEye {
-    margin-top: 126px;
+    margin-top: 106px;
     margin-left: 428px;
     position: absolute;
     visibility: hidden;
-    animation: eyeAppear 4s infinite 4s;
+    animation: eyeAppear 6s infinite 6s;
     z-index: 2;
   }
   .WelcomeMobilePupil {
-    margin-top: 140px;
+    margin-top: 120px;
     margin-left: 428px;
     position: absolute;
     z-index: 2;
-    animation: pupilLooking 5s infinite 5s;
+    animation: pupilLooking 6s infinite 6s;
   }
 
   .WelcomMoblileClosedEye {
-    margin-top: 149px;
+    margin-top: 129px;
     margin-left: 428px;
     position: absolute;
     animation-name: hideMe;
-    animation-duration: 4s;
+    animation-duration: 6s;
     visibility: hidden;
     z-index: 3;
 
@@ -200,24 +196,24 @@ h1 {
 
   @keyframes pupilLooking {
     0% {
-      margin-top: 140px;
+      margin-top: 120px;
       margin-left: 428px;
     }
     25% {
-      margin-top: 140px;
+      margin-top: 120px;
       margin-left: 413px;
     }
 
     50% {
-      margin-top: 140px;
+      margin-top: 120px;
       margin-left: 428px;
     }
      75% {
-        margin-top: 140px;
+        margin-top: 120px;
         margin-left: 440px;
     }
     100% {
-      margin-top: 140px;
+      margin-top: 120px;
       margin-left: 428px;
     }
   }

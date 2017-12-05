@@ -31,6 +31,8 @@ function mapStateToProps(state) {
   };
 }
 
+const numberOfDataPoints = this.props ? Object.keys(this.props.data) : 0;
+console.log(numberOfDataPoints);
 const mapActionsToProps = {
   next
 }
