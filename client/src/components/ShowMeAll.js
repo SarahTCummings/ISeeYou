@@ -16,14 +16,16 @@ class ShowMeAll extends Component {
         <div className="Summary">
           {/* The line below checks if the array photos exists, if it does get the url of the first photo, otherwise do nothing. Same is for the alt but with name instead of url. */}
           <img className="ShowMePhoto" src={this.props.photos ? this.props.photos[0].url : null} alt={this.props.photos ? this.props.photos[0].typeName : null}/>
-          <div className="ShowMeName">
-            {this.props.contactInfo ? <p>Name: {this.props.contactInfo.fullName}</p>: null}
-          </div>
-          <div className="ShowMeDemographics">
-            {this.props.demographics ? [
-              <p key="showMeGender">Gender: {this.props.demographics.gender || null}</p>,
-              <p key="showMeAge">Age: {this.props.demographics.age || "Unknown"}</p>,
-              <p key="showMeLocation">Location: {this.props.demographics.locationGeneral || null}</p>] : null}
+          <div>
+            <div>
+              {this.props.contactInfo ? <p className="ShowMeName">Name: {this.props.contactInfo.fullName}</p>: null}
+            </div>
+            <div className="ShowMeDemographics">
+              {this.props.demographics ? [
+                <p key="showMeGender">Gender: {this.props.demographics.gender || null}</p>,
+                <p key="showMeAge">Age: {this.props.demographics.age || "Unknown"}</p>,
+                <p key="showMeLocation">Location: {this.props.demographics.locationGeneral || null}</p>] : null}
+            </div>
           </div>
         </div>
 

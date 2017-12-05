@@ -276,19 +276,29 @@ input {
 }
 
 /*Syles for the Show me all page*/
- .ShowMeAll, .ShowMeSocialProfiles, .ShowMePhotos {
+ .ShowMeAll, .ShowMeSocialProfiles {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
  }
 
+ .ShowMePhoto{
+   position: absolute;
+   float: left;
+   margin-top: 25px;
+ }
+
+ .ShowMeDemographics, .ShowMeName {
+   float: right;
+ }
+
  .Summary {
    border: 3px solid;
    color: black;
    border-radius: 5px;
-   background-color: yellow;
-   box-shadow: 5px 5px 5px #5E5E5E;
+   background-color:rgba(88, 96, 109, .8);
+   box-shadow: 5px 5px 50px rgba(210, 253, 255, 1);
    margin: 0 auto;
    margin-top: 10px;
    text-align: left;
@@ -297,19 +307,19 @@ input {
  }
 
  .ShowMeOrgo {
-  text-align: center;
- }
-
- .ShowMeOrganizations {
    border: 3px solid black;
    color: black;
    border-radius: 5px;
-   background-color: yellow;
-   box-shadow: 5px 5px 5px #5E5E5E;
+   background-color:rgba(88, 96, 109, .8);
+   box-shadow: 5px 5px 50px rgba(210, 253, 255, 1);
    margin: 0 auto;
    margin-top: 10px;
    text-align: left;
    padding: 5%;
+ }
+
+ .ShowMeOrganizations {
+  display: flex;
  }
 
 .socialProfile {
@@ -328,8 +338,9 @@ input {
 }
 
 .photos {
-  align-self: center;
-  margin-bottom: 10px;
+  max-width:50%;
+  max-height:50%;
+  text-align: center;
 }
 
 a {
@@ -349,10 +360,20 @@ a:hover {
   background-color: aqua;
 }
 
-.contactInfo {
-  text-align: left;
-}
 
-.photos {
-  width: 10%;
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 3px solid;
+  color: black;
+  border-radius: 5px;
+  background-color:rgba(88, 96, 109, .8);
+  box-shadow: 5px 5px 50px rgba(210, 253, 255, 1);
+  width: 75%;
+  padding: 10px;
+  word-wrap: break-word;
+  text-align: center;
 }

@@ -103,37 +103,24 @@
    align-items: center;
    justify-content: center;
  }
-
- .Summary {
-   border: 3px solid;
-   color: black;
-   border-radius: 5px;
-   background-color: yellow;
-   box-shadow: 5px 5px 5px #5E5E5E;
-   margin: 0 auto;
-   margin-top: 10px;
-   text-align: left;
-   width: 300px;
-   padding: 5%;
- }
-
+ 
  .ShowMeOrgo {
-  text-align: center;
- }
-
- .ShowMeOrganizations {
    border: 3px solid black;
    color: black;
    border-radius: 5px;
-   background-color: yellow;
-   box-shadow: 5px 5px 5px #5E5E5E;
+   /*background-color: yellow;
+   box-shadow: 5px 5px 5px #5E5E5E;*/
    margin: 0 auto;
    margin-top: 10px;
    text-align: left;
    padding: 5%;
  }
 
-.socialProfile {
+ .ShowMeOrganizations {
+
+ }
+
+/*.socialProfile {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -146,7 +133,7 @@
   box-shadow: 5px 5px 5px #5E5E5E;
   width: 500px;
   padding: 10px;
-}
+}*/
 
 a {
   text-decoration: none;
@@ -165,7 +152,7 @@ a:hover {
   background-color: aqua;
 }
 
-.contactInfo {
+/*.contactInfo {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -178,11 +165,7 @@ a:hover {
   box-shadow: 5px 5px 5px #5E5E5E;
   width: 500px;
   padding: 10px;
-}
-
-.photos {
-  width: 90%;
-}
+}*/
 
 h3 {
   color: white;
