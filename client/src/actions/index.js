@@ -5,7 +5,7 @@ export function fetchData(email) {
     //this url below says to get the information using the express server to make the ajax get request to Full Contact. The "/getdata" replaces the "http://fullcontact" portion of the url. The full url can be found in server.js file outside of the client folder.
     console.log(email);
       let url =  "/getdata?email=" + email;
-          url = "/david.json"; 
+          // url = "/david.json"; 
       $.ajax({url: url}).done(function(data) {
       dispatch(receiveData(data));
     });

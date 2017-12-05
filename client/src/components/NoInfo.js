@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import FigureWithEye from '../images/figurewitheye.png';
-import { next } from '../actions';
 
 class NoInfo extends Component {
   render() {
@@ -13,4 +12,4 @@ class NoInfo extends Component {
   }
 }
 
-export default connect(NoInfo);
+export default NoInfo;
