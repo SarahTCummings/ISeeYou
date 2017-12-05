@@ -18,6 +18,7 @@ class WelcomePage extends Component {
           </div>
             <img className="WelcomeMobile" src={Cloaknoeyesmll} alt="shadowy figure"/>
             <img className="WelcomeMobileEye " src={Eye2} alt="graphic eye"/>
+            <img className="WelcomeMobilePupil" src={Pupil} alt="pupil"/>
             <img className="WelcomMoblileClosedEye" src={Eyeball} alt="closed eye" />
           <div className="WelcomeBox">
             <h1> Welcome, human. <br></br> Would you like to know what I see? </h1>
