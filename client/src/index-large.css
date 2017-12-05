@@ -1,247 +1,7 @@
 /* Large screen */
-
-@media only screen and (min-width: 1200px) {
+TODO /*If we want the figure to go off the screen we have to play with the timing of the animations*/
+@media only screen and (min-width: 1100px) {
   /*Styles for the picture page*/
-  h1 {
-    font-size: 35px;
-  }
-
-  button {
-    padding: 10px;
-    width: 240px;
-    height: 60px;
-    font-size: 18px;
-    margin: 45px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    }
-
-  .Picture_initial {
-   width: 40%;
-   height: 40%;
-  }
-
-  .Picture {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   margin: 0 auto;
-   transition-property: all;
-   transition-duration: 15s;
-   transform-origin: top;
-  }
-
-  .Picture_initial {
-   width: 70%;
-   height: 75%;
-   animation-name: fadeInOut;
-   animation-duration: 15s;
-  }
-
-  .Giant_eye {
-
-  }
-
-  .Giant_eye_cape {
-    width: 50%;
-    height: 50%;
-    z-index: -1;
-    transition: width 10s;
-
-  }
-
-
-  /*Styles for the Welcome page*/
-.WelcomeBox {
-  width: 500px;
-  height: 300px;
-  margin-top: 150px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 25px;
-  border-radius: 12px;
-  overflow: hidden;
-  background-color: rgba(88, 96, 109, .8);
-  z-index: 1;
-}
-
-.WelcomeFigure2 {
-  -webkit-filter: drop-shadow(0 2px 20px rgba(0,0,0,.5));
-  -moz-filter: drop-shadow(0 2px 20px rgba(0,0,0,.5));
-  -ms-filter: drop-shadow(0 2px 20px rgba(0,0,0,.5));
-  -o-filter: drop-shadow(0 2px 20px rgba(0,0,0,.5));
-  filter: drop-shadow(0 2px 20px rgba(0,0,0,.5));
-}
-
-.WelcomeFigure {
-  z-index: 20;
-  position: absolute;
-  top: 100px;
-  left: 5%;
-  animation-duration: 4s;
-  animation-name: slidein;
-}
-
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-.Demographics {
-  text-align: center;
-  background:rgba(88, 96, 109, .8);;
-  padding: 10px;
-  margin: 0 auto;
-  margin-top: 150px;
-  border-radius: 5px;
-  box-shadow: 5px 5px 50px rgba(210, 253, 255, 1);
-  width: 80%;
-}
-
-.demoPara {
-  margin-bottom: 10px;
-  font-size: 55px;
-}
-
-/*Styles for the Orgo page*/
- .Organizations {
-   text-align: center;
-   background:rgba(88, 96, 109, .8);;
-   padding-top: 10px;
-   padding-bottom: 20px;
-   border-radius: 5px;
-   margin: 0 auto;
-   margin-top: 150px;
-   box-shadow: 5px 5px 50px rgba(210, 253, 255, 1);
-   width: 85%;
- }
-
- .orgoPara {
-   margin-bottom: 10px;
-   font-size: 45px;
- }
-
-/*Syles for the Show me all page*/
-.ShowMeOrganizations {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
- }
-
-
-.ShowMePhotos {
-   display: flex;
-   flex-flow: wrap;
-   align-items: center;
-   justify-content: center;
- }
-
- .Summary {
-   border: 3px solid;
-   color: black;
-   border-radius: 5px;
-   background-color: yellow;
-   box-shadow: 5px 5px 5px #5E5E5E;
-   margin: 0 auto;
-   margin-top: 10px;
-   text-align: left;
-   width: 300px;
-   padding: 5%;
- }
-
- .ShowMeOrgo {
-  text-align: center;
-  border: 3px solid black;
-  color: black;
-  border-radius: 5px;
-  background-color: yellow;
-  box-shadow: 5px 5px 5px #5E5E5E;
-  margin: 0 auto;
-  margin-top: 10px;
-  text-align: left;
-  padding: 5%;
- }
-
- .ShowMeOrganizations {
-   display: flex;
-   flex-direction: row;
- }
-
- .orgoButton {
-   padding: 10px;
-   width: 240px;
-   height: 60px;
-   font-size: 18px
- }
-
-.socialProfile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  border: 3px solid;
-  color: black;
-  border-radius: 5px;
-  background-color: purple;
-  box-shadow: 5px 5px 5px #5E5E5E;
-  width: 500px;
-  padding: 10px;
-}
-
-a {
-  text-decoration: none;
-  color: aqua;
-  font-size: 20px;
-}
-
-p {
-  padding: 0;
-  margin: 3px;
-}
-
-a:hover {
-  color: yellow;
-  text-decoration: underline;
-  background-color: aqua;
-}
-
-.contactInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 15px;
-  border: 3px solid;
-  color: black;
-  border-radius: 5px;
-  background-color: purple;
-  box-shadow: 5px 5px 5px #5E5E5E;
-  width: 500px;
-  padding: 10px;
-}
-
-.photos {
-  width: 90%;
-}
-
-h3 {
-  color: white;
-}
-
-}
-
-@media only screen and (min-width: 1150px) {
-
   body {
     margin: 25px; ;
     padding: 12px;
@@ -250,7 +10,7 @@ h3 {
     /*background-image: url('./images/gradientback.jpg');*/
     height: 100%;
     background: #4A48F3;
-    background: linear-gradient(#4A48f3, #30305c);
+    background: linear-gradient(#525291, #0F0F33);
     background-repeat: no-repeat;
   }
   .hiddingForms{
@@ -259,7 +19,7 @@ h3 {
     left: 0;
     /*width: 100%;
     height: 100%;*/
-  background: linear-gradient(#4A48f3, #30305c);
+  background: linear-gradient(#525291, #0F0F33);
   background-repeat: no-repeat;
   z-index: 10;
   animation-name: revealFromRightToLeft;
@@ -329,10 +89,9 @@ h3 {
 .WelcomeBox {
   width: 500px;
   height: 300px;
-  margin-top: 150px;
+  margin-top: 264px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 250px;
   padding: 25px;
   border-radius: 12px;
   overflow: hidden;
@@ -353,9 +112,14 @@ h3 {
   position: absolute;
   top: 100px;
   left: 5%;
-  animation-duration: 4s;
+  animation-duration: 12s;
   animation-name: slidein;
   display: block;
+}
+
+.WelcomeMobile {
+  margin-top: 114px;
+  margin-left: 350px;
 }
 
 @keyframes slidein {
@@ -365,7 +129,7 @@ h3 {
   }
 
   to {
-    margin-left: 0%;
+    margin-left: -75%;
     width: 100%;
   }
 }
@@ -381,5 +145,75 @@ h3 {
     width: 0%;
   }
 }
+
+  .WelcomeMobileEye {
+    margin-top: 126px;
+    margin-left: 428px;
+    position: absolute;
+    visibility: hidden;
+    animation: eyeAppear 4s infinite 4s;
+    z-index: 2;
+  }
+  .WelcomeMobilePupil {
+    margin-top: 140px;
+    margin-left: 428px;
+    position: absolute;
+    z-index: 2;
+    animation: pupilLooking 5s infinite 5s;
+  }
+
+  .WelcomMoblileClosedEye {
+    margin-top: 149px;
+    margin-left: 428px;
+    position: absolute;
+    animation-name: hideMe;
+    animation-duration: 4s;
+    visibility: hidden;
+    z-index: 3;
+
+  }
+
+  @keyframes hideMe {
+     0%{
+       visibility: visible;
+     }
+     100% {
+       visibility: hidden;
+     }
+  }
+
+  @keyframes eyeAppear {
+    0%{
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+
+  @keyframes pupilLooking {
+    0% {
+      margin-top: 140px;
+      margin-left: 428px;
+    }
+    25% {
+      margin-top: 140px;
+      margin-left: 413px;
+    }
+
+    50% {
+      margin-top: 140px;
+      margin-left: 428px;
+    }
+     75% {
+        margin-top: 140px;
+        margin-left: 440px;
+    }
+    100% {
+      margin-top: 140px;
+      margin-left: 428px;
+    }
+  }
+
 
 }
