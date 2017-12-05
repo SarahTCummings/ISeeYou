@@ -15,21 +15,19 @@
   }
   .hiddingForms{
     position: absolute;
-    top: 0;
-    left: 0;
-    /*width: 100%;
-    height: 100%;*/
+    top: 0px;
+    left: -70%;
   background: linear-gradient(#525291, #0F0F33);
   background-repeat: no-repeat;
   z-index: 10;
   animation-name: revealFromRightToLeft;
-  animation-duration: 5s;
+  animation-duration: 15s;
   }
 
   @keyframes revealFromRightToLeft{
     0% {
       height: 100%;
-      width: 100%;
+      width: 190%;
       }
 
     100% {
@@ -112,7 +110,7 @@
   position: absolute;
   top: 100px;
   left: 5%;
-  animation-duration: 12s;
+  animation-duration: 15s;
   animation-name: slidein;
   display: block;
 }
@@ -134,17 +132,6 @@
   }
 }
 
-@keyframes revealFromRightToLeft{
-  0% {
-    height: 100%;
-    width: 100%;
-    }
-
-  100% {
-    height: 100%;
-    width: 0%;
-  }
-}
 .ShowMeOrganizations {
   display: inline-block;
   flex-direction: row;
