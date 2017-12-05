@@ -10,7 +10,7 @@ import thunkMiddleware from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { createLogger } from 'redux-logger';
 import reducer from './reducers'
-import { fetchData } from './actions'
+// import { fetchData } from './actions'
 
 const store = createStore(
     reducer,
@@ -20,7 +20,7 @@ const store = createStore(
 );
 
 //TODO Remove (store.dispatch(fetchData)) once we have the real API loaded on the page.
-store.dispatch(fetchData());
+// store.dispatch(fetchData());
 
 ReactDOM.render(
     <Provider store={store}>

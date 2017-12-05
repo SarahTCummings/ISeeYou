@@ -15,6 +15,11 @@ export default function(state = INITIAL_STATE, action) {
       return Object.assign({}, state, {
         data: action.data,
         isLoading: false,
+        screen: state.screen + 1
+      });
+    case "BACK":
+      return Object.assign({}, state, {
+        screen: state.screen - 1
       });
     case "NEXT":
       return Object.assign({}, state, {
