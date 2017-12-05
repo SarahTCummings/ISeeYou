@@ -6,7 +6,6 @@ import Organizations from './Organizations';
 import Picture from './Picture';
 import ShowMeAll from './ShowMeAll';
 import WelcomePage from './WelcomePage';
-import NoInfo from './NoInfo';
 
 class App extends Component {
   render() {
@@ -17,7 +16,7 @@ class App extends Component {
     const Demo = this.props.screen === 4 && <Demographics />;
     const Orgo = this.props.screen === 5 && <Organizations />;
     const ShowAll = this.props.screen === 6 && <ShowMeAll />;
-    
+
 
     return (
       <div className="App">
@@ -28,7 +27,6 @@ class App extends Component {
         {Demo}
         {Orgo}
         {ShowAll}
-        {NoInfo}
       </div>
     );
   }
