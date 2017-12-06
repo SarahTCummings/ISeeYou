@@ -56,7 +56,7 @@ class ShowMeAll extends Component {
             profile.type !== 'klout' ?
             <div className="socialProfile" key={profile.typeId}>
               <img className="photos" src={getPhotoIndex(this.props.photos, profile)}/>
-              <a href={profile.url || null}>{profile.typeName || null}</a>
+              <a className="profileName" href={profile.url || null}>{profile.typeName || null}</a>
               {profile.username ? <p className="userName">Username: {profile.username}</p> : null}
               {profile.bio ? <p className="socialBio">{profile.bio}</p> : null}
               {profile.followers ? <p className="socialFollowers">Followers: {profile.followers}</p> : null}

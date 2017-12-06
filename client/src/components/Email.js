@@ -34,7 +34,7 @@ class Email extends Component {
     event.preventDefault();
     this.props.fetchData(this.state.email);
     this.setState({
-      email: ""
+    email: ""
     })
   }
 }
