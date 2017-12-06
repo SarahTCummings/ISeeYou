@@ -14,7 +14,7 @@ class Picture extends Component {
     return (
     <div>
       { this.props.status === 200 ? <div className="Picture">
-        
+
         <div className="Picture_initial_container">
           <h1 className="Picture_initial_header">&#128065; Hello {this.props.data.contactInfo.fullName} &#128065;</h1>
           {this.props.data.photos ?
@@ -43,8 +43,6 @@ function mapStateToProps(state) {
 
 
 // The const below counts the number of items returned to determine the level of visibility on the internet.
-const numberOfDataPoints = this.props ? Object.keys(this.props.data) : 0;
-console.log(numberOfDataPoints);
 
 const mapActionsToProps = {
   next
