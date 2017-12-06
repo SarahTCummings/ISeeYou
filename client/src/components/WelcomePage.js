@@ -22,11 +22,16 @@ class WelcomePage extends Component {
             <img className="WelcomMoblileClosedEye" src={Eyeball} alt="closed eye" />
           <div className="WelcomeBox">
             <h1> Welcome, human. <br></br> Would you like to know what I see? </h1>
-            <button onClick={this.props.next} type="submit">Yes, continue</button>
+            <button onClick={this.handleClick.bind(this)} type="submit">Yes, continue</button>
           </div>
         </div>
     );
   }
+
+  handleClick(){
+    this.props.next(2);
+  }
+
 }
 const mapActionsToProps = {
   next

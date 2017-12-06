@@ -27,9 +27,10 @@ function requestData() {
 }
 
 // the function below helps us to change from page to page by hitting the submit button on each component.
-export function next() {
+export function next(screen) {
   return {
-    type: "NEXT"
+    type: "NEXT",
+    screen
   }
 }
 
