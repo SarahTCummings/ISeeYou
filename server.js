@@ -20,8 +20,8 @@ app.get("/getdata", function(req, res) {
  });
 });
 
-
-var server = app.listen(5000, function () {
+var port = process.env.PORT || 5000;
+var server = app.listen(port, function () {
  var port = server.address().port;
  console.log("App's server listening at http://localhost:%s", port);
 });
