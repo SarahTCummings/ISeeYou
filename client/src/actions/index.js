@@ -33,7 +33,7 @@ export function next() {
   }
 }
 
-// the function below helps us to change from page to page by hitting the submit button on each component.
+// the function below allows the user to go back if they've hit the 404 (NoInfo) page.
 export function back() {
   return {
     type: "BACK"
