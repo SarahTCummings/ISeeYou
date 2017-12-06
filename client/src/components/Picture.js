@@ -15,7 +15,7 @@ class Picture extends Component {
         <img className="Giant_eye_cape" src={FigureWithEye} alt="giant eye with cape"/>
         <div className="Picture_initial_container">
           <h1 className="Picture_initial_header">&#128065; Hello {this.props.data.contactInfo.fullName} &#128065;</h1>
-          <img className="Picture_initial" src={this.props.data.photos[1].url} alt="David"/>
+          <img className="Picture_initial" src={this.props.data.photos[1].url} alt={this.props.data.photos[1].typeId}/>
           <button className="Picture_initial_button" onClick={this.props.next} type="submit">Show Me More</button>
         </div>
       </div> : <NoInfo /> }
