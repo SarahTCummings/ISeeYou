@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 class ShowMeAll extends Component {
   render() {
+    // the function (loop) below matches the photo type id with the profile type id. If they match then show the photo.
     function getPhotoIndex(photos, profile) {
       for(var i = 0; i < photos.length; i ++) {
         if(photos[i].typeId === profile.typeId) {
@@ -22,9 +23,9 @@ class ShowMeAll extends Component {
             </div>
             <div className="ShowMeDemographics">
               {this.props.demographics ? [
-                <p key="showMeGender">Gender: {this.props.demographics.gender || null}</p>,
+                <p key="showMeGender">Gender: {this.props.demographics.gender || "Unknown"}</p>,
                 <p key="showMeAge">Age: {this.props.demographics.age || "Unknown"}</p>,
-                <p key="showMeLocation">Location: {this.props.demographics.locationGeneral || null}</p>] : null}
+                <p key="showMeLocation">Location: {this.props.demographics.locationGeneral || "Unknown"}</p>] : null}
             </div>
           </div>
         </div>

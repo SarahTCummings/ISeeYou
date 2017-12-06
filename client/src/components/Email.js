@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { next, fetchData } from '../actions'
+import { fetchData } from '../actions'
 
 
 class Email extends Component {
@@ -40,7 +40,7 @@ class Email extends Component {
 }
 
 const mapActionsToProps = {
-  next, fetchData
+  fetchData
 }
 
 export default connect(null, mapActionsToProps)(Email);

@@ -10,6 +10,7 @@ import Eyeball from '../images/eyeball.png';
 
 class Picture extends Component {
   render() {
+// the return of picture checks if the status of the rquest is 200 (or OK) and shows the photo if it is. IF it's not, the user is redirected to the 404 page (NoInfo)
     return (
     <div>
       { this.props.status === 200 ? <div className="Picture">
@@ -36,8 +37,11 @@ function mapStateToProps(state) {
   };
 }
 
+
+// The const below counts the number of items returned to determine the level of visibility on the internet.
 const numberOfDataPoints = this.props ? Object.keys(this.props.data) : 0;
 console.log(numberOfDataPoints);
+
 const mapActionsToProps = {
   next
 }
