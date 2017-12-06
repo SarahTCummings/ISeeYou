@@ -21,12 +21,17 @@ class Picture extends Component {
           <img className="Picture_initial" src={this.props.data.photos[0].url} alt={this.props.data.photos[0].typeId} /> :
           [<img key="eyeball" className="Picture_initial" src={Eyeball} alt="closed eyeball" />,
           <img key="shadowFigure" className="Picture_initial" src={ShadowFigure} alt="shadowy figure" />]}
-          <button className="Picture_initial_button" onClick={this.props.next} type="submit">Show Me More</button>
+          <button className="Picture_initial_button" onClick={this.handleClick.bind(this)} type="submit">Show Me More</button>
         </div>
       </div> : <NoInfo /> }
   </div>
     );
   }
+
+  handleClick(){
+    this.props.next(this.props.data.demographics ? 4 : this.props.data.organizations ? 5 : 6);
+  }
+
 }
 
 function mapStateToProps(state) {

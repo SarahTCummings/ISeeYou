@@ -7,11 +7,21 @@ class Organizations extends Component {
   render() {
     return (
       <div className="Organizations">
-        <h1 className="orgoPara">You are a {this.props.title} at {this.props.name} since {this.props.date}</h1>
-        <button className="orgoButton" onClick={this.props.next} type="submit">Show Me Everything</button>
+        <h1 className="orgoPara">
+          You {this.props.date ? "have been" : "are"}
+          {this.props.title ? " a " + this.props.title : " "}
+          {this.props.name ? " at " + this.props.name : " "}
+          {this.props.date ? " since " + this.props.date : ""}
+        </h1>
+        <button className="orgoButton" onClick={this.handleClick.bind(this)} type="submit">Show Me Everything</button>
       </div>
     );
   }
+
+  handleClick(){
+    this.props.next(6);
+  }
+
 }
 
 function mapStateToProps(state) {
