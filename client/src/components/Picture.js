@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import FigureWithEye from '../images/figurewitheye.png';
 import { next } from '../actions';
 import NoInfo from './NoInfo';
+import ShadowFigure from '../images/ShadowFigure.png';
+import Eyeball from '../images/eyeball.png';
 
 
 
@@ -15,7 +17,10 @@ class Picture extends Component {
         <img className="Giant_eye_cape" src={FigureWithEye} alt="giant eye with cape"/>
         <div className="Picture_initial_container">
           <h1 className="Picture_initial_header">&#128065; Hello {this.props.data.contactInfo.fullName} &#128065;</h1>
-          <img className="Picture_initial" src={this.props.data.photos[1].url} alt="David"/>
+          {this.props.data.photos ?
+          <img className="Picture_initial" src={this.props.data.photos[0].url} alt={this.props.data.photos[0].typeId} /> :
+          [<img key="eyeball" className="Picture_initial" src={Eyeball} alt="closed eyeball" />,
+          <img key="shadowFigure" className="Picture_initial" src={ShadowFigure} alt="shadowy figure" />]}
           <button className="Picture_initial_button" onClick={this.props.next} type="submit">Show Me More</button>
         </div>
       </div> : <NoInfo /> }
