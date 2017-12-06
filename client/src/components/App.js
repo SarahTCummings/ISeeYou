@@ -6,6 +6,7 @@ import Organizations from './Organizations';
 import Picture from './Picture';
 import ShowMeAll from './ShowMeAll';
 import WelcomePage from './WelcomePage';
+import Somewhat from './Somewhat';
 
 class App extends Component {
   render() {
@@ -27,6 +28,7 @@ class App extends Component {
         {Demo}
         {Orgo}
         {ShowAll}
+        <Somewhat />
       </div>
     );
   }

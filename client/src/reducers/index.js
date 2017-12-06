@@ -15,7 +15,7 @@ export default function(state = INITIAL_STATE, action) {
       return Object.assign({}, state, {
         data: action.data,
         isLoading: false,
-        screen: 6
+        screen: 7
         // screen: state.screen + 1
       });
     case "BACK":

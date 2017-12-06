@@ -90,6 +90,79 @@ h1 {
 
 }
 
+.Eye1 {
+  position: fixed;
+  margin-left: -44px;
+  margin-top: -106px;
+  animation: eyeAppear 2s infinite 2s;
+}
+
+.Eyelid1 {
+  position: fixed;
+  margin-left: -46px;
+  margin-top: -82px;
+  animation-name: hideMe;
+  animation-duration: 2s;
+  visibility: hidden;
+}
+
+.Pupil1 {
+  position: fixed;
+  margin-left: -44px;
+  margin-top: -92px;
+  animation: Eye1looking 5s infinite 3s;
+}
+
+
+.Eye1 {
+  position: fixed;
+  margin-left: -44px;
+  margin-top: -106px;
+  animation: eyeAppear 2s infinite 2s;
+}
+
+.Eyelid1 {
+  position: fixed;
+  margin-left: -46px;
+  margin-top: -82px;
+  animation-name: hideMe;
+  animation-duration: 2s;
+  visibility: hidden;
+}
+
+.Pupil1 {
+  position: fixed;
+  margin-left: -44px;
+  margin-top: -92px;
+  animation: Eye1looking 5s infinite 3s;
+}
+
+
+@keyframes Eye1looking {
+  0% {
+    margin-top: -92px;
+    margin-left: -44px;
+  }
+  25% {
+    margin-top: -92px;
+    margin-left: -57px;
+  }
+
+  50% {
+    margin-top: -92px;
+    margin-left: -44px;
+  }
+   75% {
+      margin-top: -92px;
+      margin-left: -25px;
+  }
+  100% {
+    margin-top: -92px;
+    margin-left: -44px;
+  }
+
+}
+
 @keyframes hideMe {
    0%{
      visibility: visible;
@@ -247,29 +320,9 @@ input {
   }
 }
 
-.Giant_eye {
-  /*width: 400px;
-  height: 700px;*/
-  animation-name: rollDown;
-  animation-duration: 5s;
-  z-index: 1;
-}
 
-@keyframes rollDown {
-  0% {
-    height: 0px;
-    width: 400px;
-  }
 
-  100% {
-    height: 700px;
-    width: 400px;
-  }
-}
 
-.Giant_eye_cape {
-  display: none;
-}
 
 
 .Email {

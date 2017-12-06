@@ -60,6 +60,10 @@
    transform-origin: top;
   }
 
+.Picture_initial_container {
+margin-top: 350px; 
+
+}
   .Picture_initial {
    width: 70%;
    height: 75%;

@@ -14,10 +14,8 @@ class Picture extends Component {
     return (
     <div>
       { this.props.status === 200 ? <div className="Picture">
-        <img className="Giant_eye" src={FigureWithEye} alt="giant eye"/>
-        <img className="Giant_eye_cape" src={FigureWithEye} alt="giant eye with cape"/>
         <div className="Picture_initial_container">
-          <h1 className="Picture_initial_header">&#128065; Hello {this.props.data.contactInfo.fullName} &#128065;</h1>
+          <h1 className="Picture_initial_header"> Hello {this.props.data.contactInfo.fullName}</h1>
           {this.props.data.photos ?
           <img className="Picture_initial" src={this.props.data.photos[0].url} alt={this.props.data.photos[0].typeId} /> :
           [<img key="eyeball" className="Picture_initial" src={Eyeball} alt="closed eyeball" />,
