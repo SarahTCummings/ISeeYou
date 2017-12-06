@@ -14,15 +14,9 @@
 
   }
   .hiddingForms{
-<<<<<<< HEAD
-  position: absolute;
-  top: 0px;
-  left: -70%;
-=======
     position: absolute;
     top: 0px;
     left: -30%;
->>>>>>> b549c2a7862f7086463484498568f4311c9c8336
   background: linear-gradient(#525291, #0F0F33);
   background-repeat: no-repeat;
   z-index: 10;
