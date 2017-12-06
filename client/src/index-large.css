@@ -14,20 +14,27 @@
 
   }
   .hiddingForms{
+<<<<<<< HEAD
   position: absolute;
   top: 0px;
   left: -70%;
+=======
+    position: absolute;
+    top: 0px;
+    left: -30%;
+>>>>>>> b549c2a7862f7086463484498568f4311c9c8336
   background: linear-gradient(#525291, #0F0F33);
   background-repeat: no-repeat;
   z-index: 10;
   animation-name: revealFromRightToLeft;
-  animation-duration: 15s;
+  animation-duration: 6.5s;
+    animation-timing-function: linear;
   }
 
   @keyframes revealFromRightToLeft{
     0% {
       height: 100%;
-      width: 190%;
+      width: 140%;
       }
 
     100% {
@@ -101,9 +108,10 @@
   z-index: 0;
   position: absolute;
   top: 80px;
-  left: -75%;
-  animation-duration: 15s;
+  left: -35%;
+  animation-duration: 6.5s;
   animation-name: slidein;
+  animation-timing-function: linear;
   display: block;
 }
 
@@ -116,12 +124,12 @@
   from {
     z-index: 20;
     left: 100%;
-    width: 300%;
+    width: 100%;
   }
 
   to {
     z-index: 20;
-    left: -65%;
+    left: -35%;
     width: 100%;
   }
 }
