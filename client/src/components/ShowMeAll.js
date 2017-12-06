@@ -34,8 +34,8 @@ class ShowMeAll extends Component {
         <div>
           <h1>Organizations</h1>
             {this.props.organizations ? this.props.organizations.map((org) => (
-          <div className="ShowMeOrganizations">
-            <div className="ShowMeOrgo" key={org.name}>
+          <div className="ShowMeOrganizations" key={org.name}>
+            <div className="ShowMeOrgo">
               <p>{org.name || null}: {org.title || null}</p>
               <p>Start Date: {org.startDate || "Unknown"}</p>
               <p>End Date: {org.endDate || "Unknown"}</p>
@@ -56,7 +56,7 @@ class ShowMeAll extends Component {
             profile.type !== 'klout' ?
             <div className="socialProfile" key={profile.typeId}>
               <img className="photos" src={getPhotoIndex(this.props.photos, profile)}/>
-              <a href={profile.url || null}>{profile.typeName || null}</a>
+              <a href={profile.url || null} target="_Blank">{profile.typeName || null}</a>
               {profile.username ? <p className="userName">Username: {profile.username}</p> : null}
               {profile.bio ? <p className="socialBio">{profile.bio}</p> : null}
               {profile.followers ? <p className="socialFollowers">Followers: {profile.followers}</p> : null}
@@ -74,7 +74,7 @@ class ShowMeAll extends Component {
             <h1>Websites & Chat handles</h1>
             <h3>Below are the websites & chat handles you are assoicated with.</h3>
           {this.props.contactInfo.websites ? this.props.contactInfo.websites.map((website) => (
-            <a href={website.url} key={website.url}>{website.url}</a>
+            <a href={website.url} target="_Blank" key={website.url}>{website.url}</a>
           )) : null}
           {this.props.contactInfo.chats ? this.props.contactInfo.chats.map((chat) => (
             [<p key={chat.handle}>{chat.hanndle}</p>,
