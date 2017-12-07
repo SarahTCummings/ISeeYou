@@ -136,6 +136,17 @@ margin-top: 250px;
     font-size: 35px;
   }
 
+  h2 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    animation: fadeInOut;
+    animation-duration: 15s;
+  }
+  .Welcome{
+    margin: 0 auto;
+    width: 600px;
+  }
+
   .WelcomeBox {
     z-index: 3;
     width: 600px;
