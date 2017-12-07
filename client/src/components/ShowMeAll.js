@@ -92,7 +92,7 @@ class ShowMeAll extends Component {
   }
 
   handleClick() {
-    this.props.next(1);
+    this.props.next(2);
   }
 }
 

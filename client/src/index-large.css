@@ -316,24 +316,6 @@ p {
 
 }
 
-/*.pupil404 {
-  position: absolute;
-  height: auto;
-  width: 70px;
-  margin-left: 64px;
-  margin-top:-115px;
-  z-index: 2;
-}*/
-  /*.eyes404 {
-    position: absolute;
-    top: 92px;
-    left: 34px;
-    width: 73px;
-    height: 18px;
-    background-position: -162px -350px;
-    animation: blink404 10s steps(1) infinite, pan 10s ease-in-out infinite;
-  }*/
-
   .leftarm404 {
     position: absolute;
     top: 318px;
@@ -473,5 +455,18 @@ p {
     50%  { transform: translateX(2px); }
     99%  { transform: translateX(2px); }
     100% { transform: translateX(-2px); }
+  }
+
+  .NoInfo {
+    position: relative;
+    align-items: flex-start;
+    margin: 0;
+    width: 40%;
+    text-align: left;
+    margin-top: 0%;
+  }
+
+  .NoInfo_header {
+    text-align: left;
   }
 }
