@@ -23,6 +23,15 @@ class Very extends Component {
         <img className="Eye4" src={EyeWhite} alt="eyeball"/>
         <img className="Eyelid4" src={Eyelid} alt="closed eye" />
         <img className="Pupil4" src={Pupil} alt="pupil"/>
+        <img className="Eye5" src={EyeWhite} alt="eyeball"/>
+        <img className="Eyelid5" src={Eyelid} alt="closed eye" />
+        <img className="Pupil5" src={Pupil} alt="pupil"/>
+        <img className="Eye6" src={EyeWhite} alt="eyeball"/>
+        <img className="Eyelid6" src={Eyelid} alt="closed eye" />
+        <img className="Pupil6" src={Pupil} alt="pupil"/>
+        <img className="Eye7" src={EyeWhite} alt="eyeball"/>
+        <img className="Eyelid7" src={Eyelid} alt="closed eye" />
+        <img className="Pupil7" src={Pupil} alt="pupil"/>
       </div>
 
     );

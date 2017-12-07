@@ -267,6 +267,80 @@ h1 {
   z-index: 2;
 }
 
+.Eye5 {
+  position: fixed;
+  margin-left: 80px;
+  margin-top: 125px;
+  animation: eyeAppear 3s infinite 3s;
+  z-index: 1;
+}
+
+.Eyelid5 {
+  position: fixed;
+  margin-left: 80px;
+  margin-top: 125px;
+  animation-name: hideMe;
+  animation-duration: 3s;
+  visibility: hidden;
+  z-index: 3;
+}
+
+.Pupil5 {
+  position: fixed;
+  margin-left: 80px;
+  margin-top: 144px;
+  animation: Eyelooking 2s infinite 1s;
+  animation-direction: reverse;
+  z-index: 2;
+}
+.Eye6 {
+  position: fixed;
+  margin-left: 750px;
+  margin-top: 175px;
+  animation: eyeAppear 2s infinite 2s;
+}
+
+.Eyelid6 {
+  position: fixed;
+  margin-left: 750px;
+  margin-top: 175px;
+  animation-name: hideMe;
+  animation-duration: 2s;
+  visibility: hidden;
+}
+
+.Pupil6 {
+  position: fixed;
+  margin-left: 750px;
+  margin-top: 187px;
+  animation: Eye1looking 5s infinite 3s;
+}
+
+.Eye7 {
+  position: fixed;
+  margin-left: 700px;
+  margin-top: 450px;
+  animation: eyeAppear 3s infinite 3s;
+  z-index: 1;
+}
+
+.Eyelid7 {
+  position: fixed;
+  margin-left: 700px;
+  margin-top: 474px;
+  animation-name: hideMe;
+  animation-duration: 3s;
+  visibility: hidden;
+  z-index: 3;
+}
+
+.Pupil7 {
+  position: fixed;
+  margin-left: 700px;
+  margin-top: 463px;
+  animation: Eyelooking 6s infinite 3s;
+  z-index: 2;
+}
 
 
 
