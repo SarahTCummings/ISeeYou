@@ -119,9 +119,6 @@ h1 {
   z-index: -2;
 }
 
-
-
-
 @keyframes Eye1looking {
   0% {
 
@@ -355,9 +352,6 @@ h1 {
   z-index: -2;
 }
 
-
-
-
 /*end of eyeball animations*/
 form {
   display: flex;
@@ -475,11 +469,6 @@ input {
   }
 }
 
-
-
-
-
-
 .Email {
   display: flex;
   align-items: center;
@@ -593,4 +582,13 @@ h1 a {
   padding: 10px;
   word-wrap: break-word;
   text-align: center;
+}
+
+.NoInfo {
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+  margin-top: 25%;
 }

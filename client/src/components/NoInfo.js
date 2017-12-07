@@ -7,8 +7,8 @@ class NoInfo extends Component {
   render() {
     return (
       <div className="NoInfo">
-          <h1 className="NoInfo_header">&#128065; Well done! You have hidden yourself from me &#128065;</h1>
-          <button onClick={this.props.back} type="submit">Enter a Different Email</button>
+          <h1 className="NoInfo_header">Well done! You have hidden yourself from me.</h1>
+          <button className="NoInfo_button" onClick={this.props.back} type="submit">Enter a Different Email</button>
       </div>
     );
   }
