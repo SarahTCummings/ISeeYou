@@ -7,6 +7,7 @@ import Picture from './Picture';
 import ShowMeAll from './ShowMeAll';
 import WelcomePage from './WelcomePage';
 import Somewhat from './Somewhat';
+import Very from './Very';
 
 class App extends Component {
   render() {
@@ -28,7 +29,8 @@ class App extends Component {
         {Demo}
         {Orgo}
         {ShowAll}
-        <Somewhat />
+        {/* <Somewhat /> */}
+        <Very />
       </div>
     );
   }

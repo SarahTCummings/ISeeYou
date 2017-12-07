@@ -7,7 +7,7 @@ import Pupil from '../images/pupil.png'
 
 
 
-class Somewhat extends Component {
+class Very extends Component {
   render() {
     return (
       <div className="Somewhat">
@@ -20,6 +20,9 @@ class Somewhat extends Component {
         <img className="Eye3" src={EyeWhite} alt="eyeball"/>
         <img className="Eyelid3" src={Eyelid} alt="closed eye" />
         <img className="Pupil3" src={Pupil} alt="pupil"/>
+        <img className="Eye4" src={EyeWhite} alt="eyeball"/>
+        <img className="Eyelid4" src={Eyelid} alt="closed eye" />
+        <img className="Pupil4" src={Pupil} alt="pupil"/>
       </div>
 
     );
@@ -27,4 +30,4 @@ class Somewhat extends Component {
 }
 
 
-export default Somewhat;
+export default Very;

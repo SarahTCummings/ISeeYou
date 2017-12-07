@@ -90,17 +90,19 @@ h1 {
 
 }
 
+/*beginning of eyeball animations*/
+
 .Eye1 {
   position: fixed;
   margin-left: -44px;
-  margin-top: -106px;
+  margin-top: -56px;
   animation: eyeAppear 2s infinite 2s;
 }
 
 .Eyelid1 {
   position: fixed;
   margin-left: -46px;
-  margin-top: -82px;
+  margin-top: -32px;
   animation-name: hideMe;
   animation-duration: 2s;
   visibility: hidden;
@@ -109,56 +111,29 @@ h1 {
 .Pupil1 {
   position: fixed;
   margin-left: -44px;
-  margin-top: -92px;
+  margin-top: -42px;
   animation: Eye1looking 5s infinite 3s;
 }
 
 
-.Eye1 {
-  position: fixed;
-  margin-left: -44px;
-  margin-top: -106px;
-  animation: eyeAppear 2s infinite 2s;
-}
-
-.Eyelid1 {
-  position: fixed;
-  margin-left: -46px;
-  margin-top: -82px;
-  animation-name: hideMe;
-  animation-duration: 2s;
-  visibility: hidden;
-}
-
-.Pupil1 {
-  position: fixed;
-  margin-left: -44px;
-  margin-top: -92px;
-  animation: Eye1looking 5s infinite 3s;
-}
 
 
 @keyframes Eye1looking {
   0% {
-    margin-top: -92px;
-    margin-left: -44px;
+
   }
   25% {
-    margin-top: -92px;
-    margin-left: -57px;
+      transform: translate(1em,0);
   }
 
   50% {
-    margin-top: -92px;
-    margin-left: -44px;
+
   }
    75% {
-      margin-top: -92px;
-      margin-left: -25px;
+    transform: translate(-1em,0);
   }
   100% {
-    margin-top: -92px;
-    margin-left: -44px;
+
   }
 
 }
@@ -172,6 +147,16 @@ h1 {
    }
 }
 
+@keyframes blinking {
+   0%{
+     visibility: visible;
+   }
+
+   100%{
+     visibility: hidden;
+   }
+}
+
 @keyframes eyeAppear {
   0%{
     visibility: hidden;
@@ -181,29 +166,112 @@ h1 {
   }
 }
 
-@keyframes pupilLooking {
+
+.Eye2 {
+  position: fixed;
+  margin-left: 0px;
+  margin-top: 250px;
+  animation: eyeAppear 3s infinite 3s;
+  z-index: 1;
+}
+
+.Eyelid2 {
+  position: fixed;
+  margin-left: -4px;
+  margin-top: 274px;
+  animation-name: hideMe;
+  animation-duration: 3s;
+  visibility: hidden;
+  z-index: 3;
+}
+
+.Pupil2 {
+  position: fixed;
+  margin-left: 0px;
+  margin-top: 263px;
+  animation: Eyelooking 6s infinite 3s;
+  z-index: 2;
+}
+
+
+@keyframes Eyelooking {
   0% {
-    margin-top: 26px;
-    margin-left: 77px;
+
   }
   25% {
-    margin-top: 26px;
-    margin-left: 62px;
+    transform: translate(1em,0);
+
   }
 
   50% {
-    margin-top: 26px;
-    margin-left: 77px;
+
   }
    75% {
-      margin-top: 26px;
-      margin-left: 89px;
+      transform: translate(-1em,0);
+
   }
   100% {
-    margin-top: 26px;
-    margin-left: 77px;
   }
+
 }
+
+.Eye3 {
+  position: fixed;
+  margin-left: 879px;
+  margin-top: -28px;
+  animation: eyeAppear 1s infinite 1s;
+  z-index: 1;
+}
+
+.Eyelid3 {
+  position: fixed;
+  margin-left: 879px;
+  margin-top: -4px;
+  animation-name: hideMe;
+  animation-duration: 1s;
+  visibility: hidden;
+  z-index: 3;
+}
+
+.Pupil3 {
+  position: fixed;
+  margin-left: 879px;
+  margin-top: -12px;
+  animation: Eyelooking 1s infinite 1s;
+  z-index: 2;
+}
+.Eye4 {
+  position: fixed;
+  margin-left: 80px;
+  margin-top: 400px;
+  animation: eyeAppear 3s infinite 3s;
+  z-index: 1;
+}
+
+.Eyelid4 {
+  position: fixed;
+  margin-left: 80px;
+  margin-top: 400px;
+  animation-name: hideMe;
+  animation-duration: 3s;
+  visibility: hidden;
+  z-index: 3;
+}
+
+.Pupil4 {
+  position: fixed;
+  margin-left: 80px;
+  margin-top: 419px;
+  animation: Eyelooking 2s infinite 1s;
+  animation-direction: reverse;
+  z-index: 2;
+}
+
+
+
+
+
+/*end of eyeball animations*/
 form {
   display: flex;
   flex-direction: column;
