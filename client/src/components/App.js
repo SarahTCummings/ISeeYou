@@ -34,8 +34,6 @@ class App extends Component {
         {Demo}
         {Orgo}
         {ShowAll}
-        {/* <Somewhat /> */}
-        <Very />
       </div>
     );
   }
