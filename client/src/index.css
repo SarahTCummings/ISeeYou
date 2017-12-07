@@ -41,6 +41,19 @@ h1 {
   color: white;
 }
 
+h2 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 15px;
+  text-align: center;
+  animation-name: fadeInOut;
+  color: white;
+}
+
+.Welcome{
+  margin: 0 auto;
+  width: 300px;
+}
+
 .WelcomeBox {
   z-index: 3;
   width: 300px;
