@@ -20,16 +20,16 @@ class App extends Component {
     const Demo = this.props.screen === 4 && <Demographics />;
     const Orgo = this.props.screen === 5 && <Organizations />;
     const ShowAll = this.props.screen === 6 && <ShowMeAll />;
-    const Somewhat1 = ((this.props.screen > 2) && (numberOfDataPoints <= 6)) ? <div className="yellow">6 or less</div> : null;
-    const Somewhat2 = ((this.props.screen > 2) && (numberOfDataPoints >= 7)) ? <div className="red">7 or more</div> : null;
+    const Somewhat = ((this.props.screen > 2) && (numberOfDataPoints <= 6)) ? <Somewhat/> : null;
+    const Very = ((this.props.screen > 2) && (numberOfDataPoints >= 7)) ? <Very/> : null;
 
     return (
       <div className="App">
         <div className="hiddingForms"></div>
         {Welcome}
         {Form}
-        {Somewhat1}
-        {Somewhat2}
+        {Somewhat}
+        {Very}
         {Pic}
         {Demo}
         {Orgo}
