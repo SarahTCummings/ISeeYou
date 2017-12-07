@@ -10,13 +10,15 @@ import Eyeball from '../images/eyeball.png';
 
 class Picture extends Component {
   render() {
+    const numberOfDataPoints = this.props.data ? Object.keys(this.props.data).length : 0;
 // the return of picture checks if the status of the rquest is 200 (or OK) and shows the photo if it is. IF it's not, the user is redirected to the 404 page (NoInfo)
     return (
     <div>
       { this.props.status === 200 ? <div className="Picture">
 
         <div className="Picture_initial_container">
-          <h1 className="Picture_initial_header"> Hello {this.props.data.contactInfo.fullName}</h1>
+          <h1 className="Picture_initial_header"> Hello {this.props.data.contactInfo ? this.props.data.contactInfo.fullName || null : null}</h1>
+          <h2>You are {numberOfDataPoints <= 6 ? "somewhat" : "very"} visible</h2>
           {this.props.data.photos ?
           <img className="Picture_initial" src={this.props.data.photos[0].url} alt={this.props.data.photos[0].typeId} /> :
           [<img key="eyeball" className="Picture_initial" src={Eyeball} alt="closed eyeball" />,
