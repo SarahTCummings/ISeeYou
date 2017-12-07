@@ -21,7 +21,7 @@ class App extends Component {
     const Demo = this.props.screen === 4 && <Demographics />;
     const Orgo = this.props.screen === 5 && <Organizations />;
     const ShowAll = this.props.screen === 6 && <ShowMeAll />;
-    const Somewhats = ((this.props.screen > 2) && (numberOfDataPoints <= 6)) ? <Somewhat/> : null;
+    const Somewhats = ((this.props.screen > 2) && ((numberOfDataPoints > 3) && (numberOfDataPoints <= 6))) ? <Somewhat/> : null;
     const Verys = ((this.props.screen > 2) && (numberOfDataPoints >= 7)) ? <Very/> : null;
 
     return (

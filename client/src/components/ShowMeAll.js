@@ -5,11 +5,13 @@ class ShowMeAll extends Component {
   render() {
     // the function (loop) below matches the photo type id with the profile type id. If they match then show the photo.
     function getPhotoIndex(photos, profile) {
+      if (photos){
       for(var i = 0; i < photos.length; i ++) {
         if(photos[i].typeId === profile.typeId) {
           return photos[i].url;
         }
       }
+    }
     }
 
     return (
