@@ -14,18 +14,6 @@
 
   }
 
-.red{
-background-color: red;
-height: 100%;
-width: 100%;
-}
-
-.yellow{
-  background-color: yellow;
-  height: 100%;
-  width: 100%;
-}
-
   .hiddingForms{
     position: absolute;
     top: 0px;
@@ -94,6 +82,11 @@ margin-top: 350px;
 
 
   /*Styles for the Welcome page*/
+  .Welcome{
+    margin: 0 auto;
+    width: 1100px;
+  }
+
 .WelcomeBox {
   width: 500px;
   height: 300px;
@@ -165,6 +158,14 @@ h1 {
   text-align: center;
   font-size: 35px;
   color: white;
+}
+
+h2 {
+ text-align: center;
+ font-size: 25px;
+ color: white;
+ animation: fadeInOut;
+ animation-duration: 15s;
 }
 
 .ShowMeDemographics {
@@ -305,7 +306,27 @@ p {
     transform-origin: 50% 85%;
     animation: headTilt $swayspeed ease infinite;
   }
+<<<<<<< HEAD
 
+=======
+.eyelid404 {
+  position: absolute;
+  height: auto;
+      width: 262px;
+      margin-left: -29px;
+      margin-top: 8px;
+
+}
+
+/*.pupil404 {
+  position: absolute;
+  height: auto;
+  width: 70px;
+  margin-left: 64px;
+  margin-top:-115px;
+  z-index: 2;
+}*/
+>>>>>>> master
   /*.eyes404 {
     position: absolute;
     top: 92px;
@@ -456,14 +477,4 @@ p {
     99%  { transform: translateX(2px); }
     100% { transform: translateX(-2px); }
   }
-
-  .NoInfo {
-    display: block;
-    align-items: left;
-    margin: 0;
-    width: 30%;
-    text-align: center;
-    margin-top: 0;
-  }
-
 }

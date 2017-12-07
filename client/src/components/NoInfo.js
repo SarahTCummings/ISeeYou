@@ -2,16 +2,17 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import FigureWithEye from '../images/figurewitheye.png';
 import { back } from '../actions';
+import Eyelid404 from '../images/eyelid404.png';
+import Pupil8 from '../images/404pupil.png';
+
 
 
 class NoInfo extends Component {
   render() {
     return (
       <div className="NoInfo">
-        <div className="NoInfo_Words">
-          <h1 className="NoInfo_header">Well done!</h1><h1>You have hidden yourself from me</h1>
-          <button className="NoInfo_button"onClick={this.props.back} type="submit">Enter a Different Email</button>
-        </div>
+          <h1 className="NoInfo_header">Well done! You have hidden yourself from me.</h1>
+          <button className="NoInfo_button" onClick={this.props.back} type="submit">Enter a Different Email</button>
           <div class="newcharacter404">
             <div class="chair404"></div>
             <div class="leftshoe404"></div>
@@ -21,15 +22,13 @@ class NoInfo extends Component {
               <div class="body404"></div>
               <div class="leftarm404"></div>
               <div class="rightarm404"></div>
-              <div class="head404">
-              </div>
+              <div class="head404"></div>
             </div>
-            <div class="laptop404">
-            </div>
+            <div class="laptop404"></div>
           </div>
-    </div>
+        </div>
 
-    );
+   );
   }
 }
 

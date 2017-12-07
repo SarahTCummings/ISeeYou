@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { next } from '../actions';
 
 class ShowMeAll extends Component {
   render() {
@@ -85,8 +86,13 @@ class ShowMeAll extends Component {
           </div>
           : null
         }
+        <button onClick={this.handleClick.bind(this)} type="submit">Enter a Different Email</button>
       </div>
     );
+  }
+
+  handleClick() {
+    this.props.next(1);
   }
 }
 
@@ -101,4 +107,8 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(ShowMeAll);
+const mapActionsToProps = {
+  next
+}
+
+export default connect(mapStateToProps, mapActionsToProps)(ShowMeAll);
