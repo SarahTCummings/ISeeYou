@@ -305,7 +305,23 @@ p {
     transform-origin: 50% 85%;
     animation: headTilt $swayspeed ease infinite;
   }
+.eyelid404 {
+  position: absolute;
+  height: auto;
+      width: 262px;
+      margin-left: -29px;
+      margin-top: 8px;
 
+}
+
+/*.pupil404 {
+  position: absolute;
+  height: auto;
+  width: 70px;
+  margin-left: 64px;
+  margin-top:-115px;
+  z-index: 2;
+}*/
   /*.eyes404 {
     position: absolute;
     top: 92px;
