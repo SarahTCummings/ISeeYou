@@ -12,14 +12,15 @@ class Somewhat extends Component {
     return (
       <div className="Somewhat">
         <img className="Eye1" src={EyeWhite} alt="eyeball"/>
-        <img className="Eyelid1" src={Eyelid} alt="closed eye" />
         <img className="Pupil1" src={Pupil} alt="pupil"/>
+        <img className="Eyelid1" src={Eyelid} alt="closed eye" />
         <img className="Eye2" src={EyeWhite} alt="eyeball"/>
-        <img className="Eyelid2" src={Eyelid} alt="closed eye" />
         <img className="Pupil2" src={Pupil} alt="pupil"/>
+        <img className="Eyelid2" src={Eyelid} alt="closed eye" />
         <img className="Eye3" src={EyeWhite} alt="eyeball"/>
-        <img className="Eyelid3" src={Eyelid} alt="closed eye" />
         <img className="Pupil3" src={Pupil} alt="pupil"/>
+        <img className="Eyelid3" src={Eyelid} alt="closed eye" />
+
       </div>
 
     );

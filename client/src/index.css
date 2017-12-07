@@ -207,7 +207,7 @@ h2 {
   position: fixed;
   margin-left: 0px;
   margin-top: 263px;
-  animation: Eyelooking 6s infinite 3s;
+  animation: Eyelooking 6s infinite 3s, hideMe 3s;
   z-index: -2;
 }
 
@@ -235,29 +235,37 @@ h2 {
 
 .Eye3 {
   position: fixed;
-  margin-left: 879px;
-  margin-top: -28px;
+  /*margin-left: 879px;
+  margin-top: -28px;*/
   visibility: hidden;
   animation: eyeAppear 1s infinite 1s;
   z-index: -3;
+  right: 35px;
+  top: 5px;
+
 }
 
 .Eyelid3 {
   position: fixed;
-  margin-left: 879px;
-  margin-top: -4px;
+  /*margin-left: 879px;
+  margin-top: -4px;*/
   animation-name: hideMe;
   animation-duration: 1s;
   visibility: hidden;
   z-index: -1;
+  right: 35px;
+  top:61px;
 }
 
 .Pupil3 {
   position: fixed;
-  margin-left: 879px;
-  margin-top: -12px;
-  animation: Eyelooking 1s infinite 1s;
+  /*margin-left: 879px;
+  margin-top: -12px;*/
+  visibility: hidden;
+  animation: Eyelooking 1s infinite 1s, eyeAppear 1s infinite 1s;
   z-index: -2;
+  right: 35px;
+  top: 20px;
 }
 .Eye4 {
   position: fixed;
@@ -316,28 +324,35 @@ h2 {
 }
 .Eye6 {
   position: fixed;
-  margin-left: 850px;
-  margin-top: 175px;
+  /*margin-left: 850px;
+  margin-top: 175px;*/
   visibility: hidden;
   animation: eyeAppear 2s infinite 2s;
+  top: 200px;
+  right: 40px;
   z-index: -3;
 }
 
 .Eyelid6 {
   position: fixed;
-  margin-left: 850px;
-  margin-top: 199px;
+  /*margin-left: 850px;
+  margin-top: 199px;*/
   animation-name: hideMe;
   animation-duration: 2s;
   visibility: hidden;
   z-index: -1;
+  top: 200px;
+  right: 40px;
 }
 
 .Pupil6 {
   position: fixed;
-  margin-left: 850px;
-  margin-top: 187px;
-  animation: Eye1looking 5s infinite 3s;
+  /*margin-left: 850px;
+  margin-top: 187px;*/
+  visibility: hidden;
+  animation: Eye1looking 5s infinite 3s, eyeAppear 2s infinite 2s;
+  top: 214px;
+  right: 40px;
   z-index: -2;
 }
 
